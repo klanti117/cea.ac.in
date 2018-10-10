@@ -193,6 +193,11 @@ module.exports = (env, options) => ({
       inject: "body",
       filename: "clubs-at-cea/trace-cea.html"
     }),
+    new HtmlWebpackPlugin({
+      template: "src/news-and events/whats-coming-up.html",
+      inject: "body",
+      filename: "news-and events/whats-coming-up.html"
+    })
   ],
   output: {
     filename: "[name].js",
