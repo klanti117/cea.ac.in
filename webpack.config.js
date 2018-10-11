@@ -75,16 +75,6 @@ module.exports = (env, options) => ({
       Popper: ["popper.js", "default"],
       Util: "exports-loader?Util!bootstrap/js/dist/util",
       Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
-    }),
-    new HtmlWebpackPlugin({
-      template: "src/campus-life/clubs-at-cea/trace-cea.html",
-      inject: "body",
-      filename: "clubs-at-cea/trace-cea.html"
-    }),
-    new HtmlWebpackPlugin({
-      template: "src/news-and events/whats-coming-up.html",
-      inject: "body",
-      filename: "news-and events/whats-coming-up.html"
     })
   ],
   output: {
